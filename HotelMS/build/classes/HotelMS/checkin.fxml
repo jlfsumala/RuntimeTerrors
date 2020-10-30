@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="HotelMS.CheckinControllerController">
+   <children>
+      <Pane prefHeight="600.0" prefWidth="291.0" style="-fx-background-color: #324270;">
+         <children>
+            <ImageView fitHeight="179.0" fitWidth="169.0" layoutX="64.0" layoutY="385.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../triplang/img/newhotel1.jpg" />
+               </image>
+            </ImageView>
+            <Pane layoutX="107.0" layoutY="9.0" prefHeight="73.0" prefWidth="77.0" style="-fx-border-color: white; -fx-border-radius: 5em; -fx-border-width: 3;">
+               <children>
+                  <Label layoutX="32.0" layoutY="7.0" prefHeight="36.0" prefWidth="9.0" style="-fx-font-size: 50; -fx-text-fill: white;" text="i" />
+               </children>
+            </Pane>
+            <Label layoutX="7.0" layoutY="84.0" prefHeight="26.0" prefWidth="275.0" style="-fx-text-fill: white; -fx-font-size: 15;" text="By Scheduling your Check-In in this hotel " />
+            <Label layoutX="55.0" layoutY="104.0" prefHeight="26.0" prefWidth="179.0" style="-fx-text-fill: white; -fx-font-size: 15;" text="you agree to these points." />
+            <Label layoutX="14.0" layoutY="133.0" prefHeight="26.0" prefWidth="261.0" style="-fx-text-fill: white; -fx-font-size: 15;" text="- You can cancel your reservation after" />
+            <Label layoutX="19.0" layoutY="152.0" prefHeight="26.0" prefWidth="92.0" style="-fx-text-fill: white; -fx-font-size: 15;" text=" 3/three days" />
+            <Label layoutX="14.0" layoutY="178.0" prefHeight="26.0" prefWidth="269.0" style="-fx-text-fill: white; -fx-font-size: 15;" text="- The guest will be held responsible for" />
+            <Label layoutX="22.0" layoutY="198.0" prefHeight="26.0" prefWidth="213.0" style="-fx-text-fill: white; -fx-font-size: 15;" text="any loss or damage to the hotel" />
+            <Label layoutX="22.0" layoutY="218.0" prefHeight="26.0" prefWidth="213.0" style="-fx-text-fill: white; -fx-font-size: 15;" text="property caused by themselves" />
+            <Label layoutX="14.0" layoutY="244.0" prefHeight="26.0" prefWidth="269.0" style="-fx-text-fill: white; -fx-font-size: 15;" text="- The guest will conduct himself/herself" />
+            <Label layoutX="22.0" layoutY="264.0" prefHeight="26.0" prefWidth="248.0" style="-fx-text-fill: white; -fx-font-size: 15;" text="in a respectable manner and will not" />
+            <Label layoutX="22.0" layoutY="284.0" prefHeight="26.0" prefWidth="248.0" style="-fx-text-fill: white; -fx-font-size: 15;" text="cause any nuisance or annoyance" />
+            <Label layoutX="22.0" layoutY="304.0" prefHeight="26.0" prefWidth="169.0" style="-fx-text-fill: white; -fx-font-size: 15;" text="within the hotel premise." />
+         </children></Pane>
+      <Pane layoutX="300.0" layoutY="10.0" prefHeight="475.0" prefWidth="340.0" style="-fx-border-color: #324270; -fx-border-width: 2;">
+         <children>
+            <Pane layoutX="90.0" layoutY="-6.0" prefHeight="36.0" prefWidth="160.0" style="-fx-background-color: #324270;">
+               <children>
+                  <Label layoutX="5.0" prefHeight="36.0" prefWidth="151.0" style="-fx-font-size: 24; -fx-text-fill: white;" text="Personal Data" />
+               </children>
+            </Pane>
+            <Label layoutX="11.0" layoutY="45.0" prefHeight="26.0" prefWidth="85.0" style="-fx-font-size: 17;" text="Name" />
+            <Label layoutX="11.0" layoutY="84.0" prefHeight="26.0" prefWidth="85.0" style="-fx-font-size: 17;" text="Phone" />
+            <Label layoutX="11.0" layoutY="122.0" prefHeight="26.0" prefWidth="85.0" style="-fx-font-size: 17;" text="E-mail" />
+            <Label layoutX="11.0" layoutY="160.0" prefHeight="26.0" prefWidth="85.0" style="-fx-font-size: 17;" text="Address" />
+            <Label layoutX="11.0" layoutY="198.0" prefHeight="26.0" prefWidth="103.0" style="-fx-font-size: 17;" text="Card #" />
+            <Label layoutX="11.0" layoutY="236.0" prefHeight="26.0" prefWidth="85.0" style="-fx-font-size: 17;" text="CVC Code" />
+            <TextField fx:id="GuestNameField" layoutX="102.0" layoutY="45.0" prefHeight="26.0" prefWidth="229.0" />
+            <TextField fx:id="PhoneField" layoutX="102.0" layoutY="84.0" prefHeight="26.0" prefWidth="229.0" />
+            <TextField fx:id="EmailField" layoutX="102.0" layoutY="122.0" prefHeight="26.0" prefWidth="229.0" />
+            <TextField fx:id="AddressField" layoutX="102.0" layoutY="160.0" prefHeight="26.0" prefWidth="229.0" />
+            <TextField fx:id="CardNumberField" layoutX="102.0" layoutY="198.0" prefHeight="26.0" prefWidth="229.0" />
+            <TextField fx:id="CVCCodeField" layoutX="102.0" layoutY="236.0" prefHeight="26.0" prefWidth="229.0" />
+            <Pane layoutY="291.0" prefHeight="231.0" prefWidth="340.0" style="-fx-border-color: #324270; -fx-border-width: 2;">
+               <children>
+                  <Label layoutX="14.0" layoutY="189.0" prefHeight="26.0" prefWidth="117.0" style="-fx-font-size: 16;" text="Avalable Room :" />
+                  <Label layoutX="41.0" layoutY="96.0" prefHeight="26.0" prefWidth="92.0" style="-fx-font-size: 16;" text="Room Type :" />
+                  <DatePicker fx:id="CheckinDatePicker" layoutX="17.0" layoutY="56.0" prefHeight="20.0" prefWidth="140.0" />
+                  <ChoiceBox fx:id="chooseRoomType" layoutX="134.0" layoutY="94.0" prefHeight="31.0" prefWidth="192.0" />
+                  <ChoiceBox fx:id="chooseAvailableRoom" layoutX="134.0" layoutY="186.0" prefHeight="31.0" prefWidth="192.0" />
+                  <Button layoutX="138.0" layoutY="131.0" mnemonicParsing="false" onAction="#searchRoom" prefHeight="36.0" prefWidth="77.0" style="-fx-background-color: #324270; -fx-background-radius: 5em; -fx-text-fill: white; -fx-font-size: 18;" text="Search" />
+               </children>
+            </Pane>
+            <DatePicker fx:id="CheckoutDatePicker" layoutX="178.0" layoutY="347.0" prefHeight="26.0" prefWidth="140.0" />
+            <Label layoutX="26.0" layoutY="326.0" prefHeight="26.0" prefWidth="111.0" style="-fx-font-size: 14;" text="Date of Check-In" />
+            <Label layoutX="192.0" layoutY="326.0" prefHeight="26.0" prefWidth="117.0" style="-fx-font-size: 14;" text="Date of Check-out" />
+            <Pane layoutX="101.0" layoutY="284.0" prefHeight="36.0" prefWidth="140.0" style="-fx-background-color: #324270;">
+               <children>
+                  <Label layoutX="8.0" prefHeight="36.0" prefWidth="125.0" style="-fx-font-size: 24; -fx-text-fill: white;" text="Room Data" />
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+      <Button fx:id="ClearButton" layoutX="381.0" layoutY="547.0" mnemonicParsing="false" onAction="#clearValues" prefHeight="36.0" prefWidth="77.0" style="-fx-background-color: #c6c4c3; -fx-background-radius: 5em; -fx-text-fill: white; -fx-font-size: 18;" text="Clear" />
+      <Button fx:id="EnterButton" layoutX="486.0" layoutY="547.0" mnemonicParsing="false" onAction="#finishEntering" prefHeight="36.0" prefWidth="77.0" style="-fx-background-color: #324270; -fx-background-radius: 5em; -fx-text-fill: white; -fx-font-size: 18;" text="Enter" />
+   </children>
+</AnchorPane>

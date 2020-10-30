@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="210.0" prefWidth="494.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="HotelMS.checkoutController">
+   <children>
+      <Pane prefHeight="210.0" prefWidth="243.0" style="-fx-background-color: #324270;">
+         <children>
+            <ImageView fitHeight="141.0" fitWidth="137.0" layoutX="59.0" layoutY="65.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../triplang/img/newhotel1.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="23.0" layoutY="10.0" prefHeight="35.0" prefWidth="197.0" style="-fx-text-fill: white;" text="We hope you enjoyed your">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="75.0" layoutY="34.0" prefHeight="35.0" prefWidth="94.0" style="-fx-text-fill: white;" text="your with us!">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+         </children></Pane>
+      <Pane layoutX="253.0" layoutY="10.0" prefHeight="141.0" prefWidth="231.0" style="-fx-border-color: #324270; -fx-border-width: 2;">
+         <children>
+            <Pane layoutX="55.0" layoutY="-6.0" prefHeight="32.0" prefWidth="122.0" style="-fx-background-color: #324270;">
+               <children>
+                  <Label layoutX="5.0" layoutY="-1.0" prefHeight="35.0" prefWidth="113.0" style="-fx-text-fill: white;" text="Check out">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Label layoutX="10.0" layoutY="73.0" prefHeight="35.0" prefWidth="64.0" text="Room ID:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="CheckoutID" layoutX="80.0" layoutY="78.0" prefHeight="26.0" prefWidth="137.0" />
+            <Label fx:id="CheckoutNameField" layoutX="10.0" layoutY="36.0" prefHeight="35.0" prefWidth="64.0" text="Name :">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="CheckoutName" layoutX="80.0" layoutY="41.0" prefHeight="26.0" prefWidth="137.0" />
+         </children>
+      </Pane>
+      <Button layoutX="280.0" layoutY="162.0" mnemonicParsing="false" onAction="#ClearCheckout" prefHeight="36.0" prefWidth="76.0" style="-fx-background-color: #c6c4c3; -fx-background-radius: 5em; -fx-font-size: 17;" text="Clear" />
+      <Button fx:id="EnterCheckout" layoutX="383.0" layoutY="162.0" mnemonicParsing="false" onAction="#finishEntering" prefHeight="36.0" prefWidth="76.0" style="-fx-background-color: #324270; -fx-background-radius: 5em; -fx-font-size: 17;" text="Enter" />
+   </children>
+</AnchorPane>

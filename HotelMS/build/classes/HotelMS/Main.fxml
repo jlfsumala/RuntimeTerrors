@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="827.0" prefWidth="1113.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="HotelMS.LoginMainController">
+   <children>
+      <Pane prefHeight="133.0" prefWidth="1113.0" style="-fx-background-color: #324270;" AnchorPane.bottomAnchor="694.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Text layoutX="102.0" layoutY="79.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="160.98736989498138">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="137.0" fitWidth="116.0" layoutX="39.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../triplang/img/newhotel1.jpg" />
+               </image>
+            </ImageView>
+            <Label fx:id="emp_loggedin" layoutX="182.0" layoutY="38.0" prefHeight="54.0" prefWidth="483.0" text="Hotel Management System" textFill="#d6d8e4">
+               <font>
+                  <Font name="System Bold" size="37.0" />
+               </font>
+            </Label>
+            <Label fx:id="emp_loggedin1" layoutX="182.0" layoutY="80.0" prefHeight="34.0" prefWidth="201.0" text="Welcome, ADMIN! " textFill="#d6d8e4">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Label>
+            <JFXButton buttonType="RAISED" layoutX="951.0" layoutY="47.0" onAction="#logOut" prefHeight="42.0" prefWidth="151.0" ripplerFill="#477eff" style="-fx-background-color: #d6d8e4#d6d8e4;" text="LOGOUT" />
+         </children>
+         <opaqueInsets>
+            <Insets bottom="1.0" top="1.0" />
+         </opaqueInsets>
+      </Pane>
+      <TableView fx:id="roomTable" layoutX="203.0" layoutY="190.0" prefHeight="268.0" prefWidth="875.0">
+        <columns>
+          <TableColumn fx:id="room_number" prefWidth="267.0" text="Room Number" />
+          <TableColumn fx:id="room_type" prefWidth="334.0" text="Room Type" />
+            <TableColumn fx:id="room_availability" prefWidth="273.0" text="Room Availability" />
+        </columns>
+      </TableView>
+      <TableView fx:id="employeeTable" layoutX="203.0" layoutY="517.0" prefHeight="268.0" prefWidth="875.0">
+         <columns>
+            <TableColumn fx:id="emp_id" prefWidth="117.0" text="Employee ID" />
+            <TableColumn fx:id="emp_fname" prefWidth="216.0" text="First Name" />
+            <TableColumn fx:id="emp_lname" prefWidth="213.0" text="Last Name" />
+            <TableColumn fx:id="emp_age" prefWidth="126.0" text="Age" />
+            <TableColumn fx:id="isAdmin" prefWidth="202.0" text="Position" />
+         </columns>
+      </TableView>
+      <VBox alignment="CENTER" fillWidth="false" layoutY="137.0" prefHeight="694.0" prefWidth="176.0" spacing="50.0" style="-fx-background-color: #647494#647494;">
+         <children>
+            <JFXButton alignment="CENTER" buttonType="RAISED" contentDisplay="TOP" onAction="#guest" prefHeight="115.0" prefWidth="152.0" ripplerFill="#1490d9" style="-fx-background-color: #d6d8e4;" text="GUEST" wrapText="true">
+               <graphic>
+                  <ImageView fitHeight="74.0" fitWidth="71.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../triplang/img/iconfinder_search_326690.png" />
+                     </image>
+                  </ImageView>
+               </graphic></JFXButton>
+            <JFXButton alignment="CENTER" buttonType="RAISED" contentDisplay="TOP" onAction="#checkIn" prefHeight="115.0" prefWidth="152.0" ripplerFill="#1490d9" style="-fx-background-color: #d6d8e4;" text="CHECK IN" wrapText="true">
+               <graphic>
+                  <ImageView fitHeight="74.0" fitWidth="86.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../triplang/img/iconfinder_plus_1772631.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton alignment="CENTER" buttonType="RAISED" contentDisplay="TOP" onAction="#checkOut" prefHeight="115.0" prefWidth="152.0" ripplerFill="#1691d9" style="-fx-background-color: #d6d8e4#d6d8e4;" text="CHECK OUT" wrapText="true">
+               <graphic>
+                  <ImageView fitHeight="82.0" fitWidth="94.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../triplang/img/iconfinder_check_in_1642850.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton alignment="CENTER" buttonType="RAISED" contentDisplay="TOP" onAction="#employee" prefHeight="115.0" prefWidth="152.0" style="-fx-background-color: #d6d8e4#d6d8e4;" text="EMPLOYEE" wrapText="true">
+               <graphic>
+                  <ImageView fitHeight="72.0" fitWidth="83.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../triplang/img/iconfinder_silhouette5_216343.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <ripplerFill>
+                  <RadialGradient centerX="0.5227272727272727" centerY="0.5485436893203883" radius="0.5">
+                     <stops>
+                        <Stop color="#1490d9" />
+                        <Stop color="#1490d9" offset="0.043478260869565216" />
+                        <Stop color="#1494d9" offset="0.4823813583404376" />
+                        <Stop color="#1494d9c8" offset="0.6780335322534812" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </ripplerFill>
+            </JFXButton>
+         </children>
+      </VBox>
+      <Text layoutX="203.0" layoutY="181.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ROOMS" wrappingWidth="128.99998638033867">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Text>
+      <Text layoutX="203.0" layoutY="504.0" strokeType="OUTSIDE" strokeWidth="0.0" text="EMPLOYEES" wrappingWidth="186.9873366355896">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Text>
+      <JFXButton buttonType="RAISED" layoutX="927.0" layoutY="143.0" onAction="#refreshTable" prefHeight="42.0" prefWidth="151.0" ripplerFill="#477eff" style="-fx-background-color: #d6d8e4#d6d8e4;" text="REFRESH TABLE" />
+   </children>
+</AnchorPane>

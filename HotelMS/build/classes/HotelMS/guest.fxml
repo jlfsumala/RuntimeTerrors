@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="678.0" prefWidth="942.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="HotelMS.guestController">
+   <children>
+      <TableView fx:id="guestTable" layoutX="12.0" layoutY="125.0" prefWidth="918.0">
+        <columns>
+          <TableColumn fx:id="guest_no" prefWidth="83.0" text="Guest ID" />
+          <TableColumn fx:id="guest_name" minWidth="0.0" prefWidth="221.0" text="Name" />
+            <TableColumn fx:id="guest_cp" minWidth="0.0" prefWidth="183.0" text="Phone Number" />
+            <TableColumn fx:id="guest_address" minWidth="0.0" prefWidth="305.0" text="Address" />
+            <TableColumn fx:id="room_number" minWidth="0.0" prefWidth="125.0" text="Room Number" />
+            <TableColumn fx:id="CheckinDate" minWidth="0.0" prefWidth="291.0" text="Check In Date" />
+            <TableColumn fx:id="CheckoutDate" minWidth="0.0" prefWidth="291.0" text="Check Out Date" />
+        </columns>
+      </TableView>
+      <VBox alignment="CENTER" prefHeight="79.0" prefWidth="942.0" style="-fx-background-color: #324270;">
+         <children>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="GUEST LIST">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Text>
+         </children>
+      </VBox>
+      <JFXButton buttonType="RAISED" layoutX="686.0" layoutY="585.0" onAction="#deleteGuest" prefHeight="42.0" prefWidth="151.0" ripplerFill="#477eff" style="-fx-background-color: #d6d8e4#d6d8e4;" text="CANCEL BOOKING" />
+      <JFXButton buttonType="RAISED" layoutX="89.0" layoutY="585.0" onAction="#refreshTable" prefHeight="42.0" prefWidth="151.0" ripplerFill="#477eff" style="-fx-background-color: #d6d8e4#d6d8e4;" text="REFRESH TABLE" />
+   </children>
+</AnchorPane>
